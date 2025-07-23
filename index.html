@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DMA | Sagun Se Khushiya | HUBLI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      text-align: center;
+      padding: 15px 20px 5px;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+    header h1 {
+      margin: 5px 0 0;
+      font-size: 20px;
+      color: #4b2e2e;
+    }
+    header h1::before, header h1::after {
+      content: "\1F337";
+      margin: 0 5px;
+    }
+    header h2 {
+      margin: 0;
+      font-size: 26px;
+      color: goldenrod;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      color: #e67e22;
+      animation: blink 2s infinite;
+    }
+    .location {
+      text-align: right;
+      font-size: 14px;
+      padding-right: 20px;
+      color: #4b2e2e;
+    }
+    nav { margin-top: 10px; }
+    nav a {
+      margin: 5px 12px;
+      text-decoration: none;
+      color: #4b2e2e;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    nav a:hover { color: #e67e22; }
+
+    .welcome-box {
+  max-width: 1200px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 60px 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.3);
+  text-align: center;
+}
+
+    .stars { font-size: 30px; color: goldenrod; }
+    .welcome-box h2 { font-size: 40px; margin: 10px 0; color: #4b2e2e; }
+    .welcome-box p {
+      font-size: 22px;
+      margin: 0;
+      font-weight: bold;
+      color: #e67e22;
+      animation: blink 2s infinite;
+    }
+
+    .section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+    .section h2 {
+      text-align: center;
+      color: #4b2e2e;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    .section h2 i { margin-right: 8px; color: goldenrod; }
+    .section h2::after {
+      content: '';
+      display: block;
+      width: 90px;
+      height: 2px;
+      background: linear-gradient(90deg, goldenrod, #f5e4c3, goldenrod);
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
+    .slider img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .slider-controls { text-align: center; margin-top: 15px; }
+    .slider-controls button {
+      background: goldenrod;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      margin: 0 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .rate-table {
+      margin: 20px auto;
+      width: 100%;
+      max-width: 800px;
+      border-collapse: collapse;
+    }
+    .rate-table th, .rate-table td {
+      border: 1px solid #ddd;
+      padding: 14px;
+      text-align: center;
+    }
+    .rate-table th {
+      background: goldenrod;
+      color: #fff;
+    }
+
+    .notes, .thanks, .artist-box, .faq-box, .gif-box {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+    .faq-item {
+  margin-bottom: 12px;
+}
+
+
+.faq-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.faq-question {
+  font-size: 16px;
+  color: #4b2e2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+.faq-item.open .faq-answer {
+  max-height: 300px;
+}
+.faq-item .icon {
+  transition: transform 0.3s ease;
+}
+.faq-item.open .icon {
+  transform: rotate(180deg);
+}
+
+
+    .signature-bg {
+  background: none;
+  color: #4b2e2e; /* Optional: replace with visible color */
+}
+    .signature-bg p { color: #fefefe; }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      z-index: 1000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f5e4c3;
+      color: #4b2e2e;
+      font-size: 14px;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0.4; }
+    }
+.certified-bg {
+  background: #fdfdfd;
+  color: #fff;
+}
+
+.royal-header {
+  text-align: center;
+  background: #fff8f0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.top-banner h1 {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555; /* match with .brand-area p */
+  margin: 0;
+}
+
+.brand-area h2 {
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  color: #2e2e2e;
+}
+
+.brand-area p {
+  margin: 2px 0;
+  font-style: italic;
+  color: #555;
+}
+
+.brand-area .location {
+  font-weight: bold;
+  color: #888;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #a52a2a;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.header::before {
+  content: "Deepa Mehendi Artist Deepa Mehendi Artist Deepa Mehendi Artist Deepa Mehendi Artist ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  color: #f3cfc2; /* Adjusted to match screenshot */
+  opacity: 0.3;
+  z-index: 0;
+  white-space: pre-wrap;
+  line-height: 1.2;
+  padding: 50px;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+.sticky-popup {
+  position: sticky;
+  top: 140px;
+  background: #fff;
+  color: #4b2e2e;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-top: 2px solid goldenrod;
+  border-bottom: 2px solid goldenrod;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sticky-popup button {
+  background: none;
+  border: none;
+  color: #a52a2a;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.blink-text {
+  animation: blink 1s infinite;
+}
+
+/* ✅ SPLASH SCREEN STYLE */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fdfdfd; /* Creamy background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #a0522d;
+  font-family: 'Great Vibes', cursive;
+  z-index: 9999;
+  animation: fadeOut 2s ease 4.5s forwards;
+  overflow: hidden;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.preloader-content {
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+#preloader h1 {
+  font-size: 32px;
+  color: #a0522d;
+  margin-bottom: 10px;
+  animation: slideInTop 1s ease forwards;
+}
+
+.hindi-line {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  color: #8b4513;
+  opacity: 0;
+  animation: fadeZoomIn 1.5s ease-in-out 1s forwards;
+}
+
+/* Animation Keyframes */
+@keyframes slideInTop {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeZoomIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.review-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.review-scroll-container video {
+  flex: 0 0 auto;
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);
+}
+#full-design-gallery img:hover,
+#full-guest-gallery img:hover,
+#full-colour-gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  header h1, header h2 {
+    font-size: 18px;
+  }
+
+  .welcome-box h2 {
+    font-size: 24px;
+  }
+
+  .welcome-box p, .section p, .faq-question, .faq-answer {
+    font-size: 14px;
+  }
+
+  .rate-table th, .rate-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sticky-popup {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .slider-controls button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .brand-area h2 {
+    font-size: 20px;
+  }
+
+  .brand-area p, .brand-area .location {
+    font-size: 14px;
+  }
+
+  .whatsapp-float {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .review-scroll-container video {
+    width: 90vw;
+  }
+
+  #preloader h1, .hindi-line {
+    font-size: 22px;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <!-- Splash Screen -->
+<div id="preloader">
+  <div class="preloader-content">
+    <h1>🌿 DMA 🌿</h1>
+    <h2 class="hindi-line">🌟शुभ मंगल सौभाग्य🌟</h2>
+  </div>
+</div>
+
+<!-- Your main site -->
+<div id="main-content" style="display:none;">
+    
+  <header class="royal-header">
+  <div class="top-banner">
+    <h1>श्री हित हरिवंश</h1>
+  </div>
+
+  <div class="brand-area">
+    <h2>dMA</h2>
+    <p>🌿 Sagun Se Khushiya 🌿</p>
+    <div class="location">HUBLI</div>
+  </div>
+
+ <nav class="main-nav">
+  <ul>
+    <li><a href="#design-gallery">Gallery</a></li>
+    <li><a href="#guest-gallery">Guest Gallery</a></li>
+    <li><a href="#colour-gallery">Colours</a></li>
+  </ul>
+</nav>
+</header>
+
+  <div class="welcome-box" id="welcome" style="padding:0; border-radius: 10px; overflow: hidden;">
+  <video autoplay muted loop playsinline style="width:100%; height:auto; border-radius:10px;">
+    <source src="index/w.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+  <section class="section">
+    <h2><i class="fas fa-award"></i>Certified Artist</h2>
+    <p>Certified with WedMeGood. Our team is hardworking and talented to make your events memorable.</p>
+  </section>
+<video 
+  src="timelaps/T.mp4" 
+  poster="timelaps/t.jpeg" 
+  controls 
+  autoplay 
+  loop 
+  style="width:100%; margin: 40px 0; border-radius: 10px; box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);">
+</video>
+
+  <section class="section">
+  <h2><i class="fas fa-feather-alt"></i>Signature Mehendi</h2>
+  <p>
+    We create Traditional, Royal, and Arabic Mehendi designs filled with beauty and emotion – perfect for your special day.
+  </p>
+</section>
+
+ <section class="section" id="design-gallery">
+  <h2><i class="fas fa-images"></i>Design Gallery</h2>
+  <div id="design-preview" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+    <img src="images/H2.jpeg" alt="Design Preview 1" style="width: 100%; max-width: 400px; border-radius: 10px;">
+    <img src="images/H3.jpeg" alt="Design Preview 2" style="width: 100%; max-width: 400px; border-radius: 10px;">
+    <button onclick="openAllDesigns()" style="margin-top: 20px; padding: 10px 20px; background: goldenrod; border: none; color: white; font-size: 16px; border-radius: 5px; cursor: pointer;">See More</button>
+  </div>
+  <div id="full-design-gallery" style="display: none; flex-wrap: wrap; gap: 10px; margin-top: 30px; justify-content: center;"></div>
+</section>
+
+  <section class="section" id="guest-gallery">
+  <h2><i class="fas fa-users"></i>Guest Gallery</h2>
+  <div id="guest-preview" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+    <img src="guest/G1.jpeg" alt="Guest Preview 1" style="width: 100%; max-width: 400px; border-radius: 10px;">
+    <img src="guest/G2.jpeg" alt="Guest Preview 2" style="width: 100%; max-width: 400px; border-radius: 10px;">
+    <button onclick="openAllGuests()" style="margin-top: 20px; padding: 10px 20px; background: goldenrod; border: none; color: white; font-size: 16px; border-radius: 5px; cursor: pointer;">See More</button>
+  </div>
+  <div id="full-guest-gallery" style="display: none; flex-wrap: wrap; gap: 10px; margin-top: 30px; justify-content: center;"></div>
+</section>
+
+
+  <section class="section" id="colour-gallery">
+  <h2><i class="fas fa-palette"></i>Our New Mehendi Colours</h2>
+  <div id="colour-preview" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+    <img src="colour/C1.jpeg" alt="Colour Preview 1" style="width: 100%; max-width: 400px; border-radius: 10px;">
+    <img src="colour/C2.jpeg" alt="Colour Preview 2" style="width: 100%; max-width: 400px; border-radius: 10px;">
+    <button onclick="openAllColours()" style="margin-top: 20px; padding: 10px 20px; background: goldenrod; border: none; color: white; font-size: 16px; border-radius: 5px; cursor: pointer;">See More</button>
+  </div>
+  <div id="full-colour-gallery" style="display: none; flex-wrap: wrap; gap: 10px; margin-top: 30px; justify-content: center;"></div>
+</section>
+
+
+  <section class="section">
+    <h2><i class="fas fa-list"></i>Offerings & Packages</h2>
+    <table class="rate-table">
+      <tr><th>Offerings</th><th>Rates</th></tr>
+      <tr><td>Bridal Mehendi</td><td>₹5100 onwards</td></tr>
+      <tr><td>Guest Mehendi – Traditional</td><td>₹500 per person</td></tr>
+      <tr><td>Guest Mehendi – Arabic</td><td>₹300 per person</td></tr>
+      <tr><th colspan="2">Packages</th></tr>
+      <tr><td>1 Bride + 10 Guests</td><td>₹11,000</td></tr>
+      <tr><td>1 Bride + 20 Guests</td><td>₹15,000</td></tr>
+    </table>
+    <p style="text-align:center; font-weight:bold; font-size:16px; animation:blink 2s infinite;">Custom packages available, please contact us.</p>
+  </section>
+
+  <div class="gif-box">
+  <video width="100%" autoplay muted loop>
+    <source src="NV.mp4" type="video/mp4">
+  </video>
+</div>
+<p style="text-align:center; font-size:18px; font-style:italic; font-weight:bold; color:#4b2e2e; margin-top:-10px;">
+  Mehendi is not just an art, it's an emotion.
+</p>
+
+
+ <div class="faq-box section">
+  <h2><i class="fas fa-question-circle"></i>FAQ</h2>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">
+       Is advance refundable? <i class="fas fa-chevron-down icon"></i>
+    </div>
+    <div class="faq-answer">No, advance is not refundable.</div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">
+       When should I book? <i class="fas fa-chevron-down icon"></i>
+    </div>
+    <div class="faq-answer">Please book at least 2 weeks in advance.</div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">
+       What about bookings outside Lucknow? <i class="fas fa-chevron-down icon"></i>
+    </div>
+    <div class="faq-answer">Travel charges apply for bookings outside Lucknow.</div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">
+      Are colours natural? <i class="fas fa-chevron-down icon"></i>
+    </div>
+    <div class="faq-answer">Yes, we use natural mehendi colours.</div>
+  </div>
+</div>
+
+
+
+  <section class="section">
+  <h2><i class="fas fa-heart"></i>Special Thanks</h2>
+  <p>Thank you for trusting us to make your celebrations beautiful.</p>
+</section>
+
+<div class="section">
+    <div class="review-scroll-container">
+    <video src="thanks/1.mp4" poster="thanks/1p.jpeg" controls muted></video>
+    <video src="thanks/2.mp4" poster="thanks/2p.jpeg" controls muted></video>
+    <video src="thanks/3.mp4" poster="thanks/3p.jpeg" controls muted></video>
+  </div>
+</div>
+
+  <section class="section">
+  <h2><i class="fas fa-user"></i>Know Your Artist</h2>
+  <p>imprest, a passionate mehendi artist with over 12 years of experience in bridal and festive mehendi, believes in creating lasting memories with every intricate stroke, blending tradition with creativity and joy.</p>
+</section>
+
+
+  <a href="https://wa.me/91896711?text=Hi%20Deepa%20Ji%2C%20I%20would%20like%20to%20book%20a%20mehendi%20appointment.%20Please%20share%20details." 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Book on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+  
+  <script>
+    
+    const slides = [];
+    for (let i=2; i<=17; i++) slides.push(`images/H${i}.jpeg`);
+    for (let i=1; i<=13; i++) slides.push(`images/L${i}.jpeg`);
+    let current = 0;
+    function showSlide() { document.getElementById('slide').src = slides[current]; }
+    function nextSlide() { current=(current+1)%slides.length; showSlide(); }
+    function prevSlide() { current=(current-1+slides.length)%slides.length; showSlide(); }
+
+    const guestSlides = [];
+    for (let i=1; i<=13; i++) guestSlides.push(`guest/G${i}.jpeg`);
+    for (let i=1; i<=8; i++) guestSlides.push(`guest/S${i}.jpeg`);
+    let guestCurrent = 0;
+    function showGuestSlide() { document.getElementById('guest-slide').src = guestSlides[guestCurrent]; }
+    function nextGuestSlide() { guestCurrent=(guestCurrent+1)%guestSlides.length; showGuestSlide(); }
+    function prevGuestSlide() { guestCurrent=(guestCurrent-1+guestSlides.length)%guestSlides.length; showGuestSlide(); }
+
+    const colourSlides = [];
+    for (let i=1; i<=14; i++) colourSlides.push(`colour/C${i}.jpeg`);
+    let colourCurrent = 0;
+    function showColourSlide() { document.getElementById('colour-slide').src = colourSlides[colourCurrent]; }
+    function nextColourSlide() { colourCurrent=(colourCurrent+1)%colourSlides.length; showColourSlide(); }
+    function prevColourSlide() { colourCurrent=(colourCurrent-1+colourSlides.length)%colourSlides.length; showColourSlide(); }
+
+    function toggleFAQ(el) {
+  el.classList.toggle('open');
+}
+
+    showSlide();
+    showGuestSlide();
+    showColourSlide();
+  </script>
+
+<a href="https://wa.me/918896711?text=Hi%20Deepa%20Ji%2C%20I%20would%20like%20to%20book%20a%20mehendi%20appointment.%20Please%20share%20details." 
+   class="sticky-popup" 
+   target="_blank">
+  <span class="blink-text">📖 Book Now</span>
+</a>
+
+
+<footer>
+  <div style="margin-bottom: 5px;">
+    <strong>Contact Us:</strong> <a href="https://wa.me/914896711" style="color:#4b2e2e; text-decoration: none;">+91 748 96711</a>
+  </div>
+  &copy; 2025 DMAt. All rights reserved.
+</footer>
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    }, 4000);
+  });
+
+  // ✅ Auto-pause other videos
+  document.addEventListener('play', function (e) {
+    const allVideos = document.querySelectorAll('video');
+    allVideos.forEach(video => {
+      if (video !== e.target) {
+        video.pause();
+      }
+    });
+  }, true);
+
+  // ✅ Unmute on user click
+  const videos = document.querySelectorAll('video');
+
+videos.forEach(video => {
+  video.addEventListener('click', function () {
+    videos.forEach(v => {
+      if (v !== this) {
+        v.pause();
+        v.muted = true;
+      }
+    });
+    this.muted = false;
+    this.play();
+  });
+});
+
+  function openAllDesigns() {
+  window.location.href = "design-gallery.html";
+}
+
+
+  function openAllGuests() {
+  window.location.href = "guest-gallery.html";
+}
+
+  function openAllColours() {
+  window.location.href = "colour-gallery.html";
+}
+
+</script>
+
+</body>
+</html>
